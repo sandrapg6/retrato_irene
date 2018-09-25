@@ -1,0 +1,85 @@
+void setup() { 
+   background (255); 
+
+size (500,500);
+}
+
+void draw() {
+  background (255); 
+  irene(0,0);
+  noLoop();
+
+ }
+
+void irene(float posx,float posy) {
+  //pelo-hair
+  pushMatrix();
+  translate (posx,posy);
+  stroke(200,100,5);
+   
+line(10,10,10,100);
+line(10,100,20,100);
+line(20,100,20,40);
+line(20,40,30,30);
+line(30,30,50,30);
+line(50,30,50,100);
+line(50,100,60,100);
+line(60,100,60,10);
+line(60,10,10,10);
+
+//ojos-eyes
+stroke(0,0,255);
+strokeWeight(7);
+point(20,40);
+point(50,40);
+
+//boca-mouth
+strokeWeight(1);
+line(30,70,30,80);
+line(30,80,40,80);
+line(40,80,40,70);
+//nariz-nose
+line(30,50,30,60);
+line(30,60,40,60);
+line(40,60,30,50);
+
+//cara-cuello-neck
+line(20,90,50,90);
+
+//cuerpo
+line(30,90,30,100);
+line(30,100,10,100);
+line(10,100,10,150);
+line(10,150,20,150);
+line(20,150,20,120);
+line(20,120,30,120);
+line(30,120,30,170);
+line(30,170,40,170);
+line(40,170,40,120);
+line(40,120,50,120);
+line(50,120,50,150);
+line(50,150,60,150);
+line(60,150,60,100);
+line(60,100,40,100);
+line(40,100,40,90);
+
+//pie1
+line(30,170,30,180);
+line(30,180,20,180);
+
+//pie2
+line(40,170,40,180);
+line(40,180,50,180);
+line(10,10,10,100);
+line(10,100,20,100);
+line(20,100,20,40);
+line(20,40,30,30);
+line(30,30,50,30);
+line(50,30,50,100);
+line(50,100,60,100);
+line(60,100,60,10);
+line(60,10,10,10); 
+;
+popMatrix();
+
+}
